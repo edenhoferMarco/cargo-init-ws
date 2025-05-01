@@ -2,5 +2,18 @@
 name = "cargo-init-ws"
 version = "0.1.0"
 edition = "2021"
+description = "Interactive CLI-Tool for creating Cargo workspaces projects"
+license = "MIT"
+repository = "https://github.com/edenhoferMarco/cargo-init-ws"
+homepage = "https://github.com/edenhoferMarco/cargo-init-ws"
+documentation = "https://docs.rs/cargo-init-ws"
+readme = "README.md"
+categories = ["development-tools", "command-line-utilities"]
+keywords = ["cargo", "workspace", "cli", "tool"]
+exclude = ["/.gitignore", "/target", "/.github"]
+
+[[bin]]
+name = "cargo-init-ws"
+path = "src/main.rs"
 
 [dependencies]
