@@ -1,5 +1,5 @@
 # cargo-init-ws
-## Astract
+## Abstract
 Interactive CLI-Tool for creating Cargo workspace projects
 with as little effort on the developer side as possible
 
