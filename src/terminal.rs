@@ -60,7 +60,6 @@ impl Terminal {
                 .item("Binary")
                 .interact()?;
             let module_type = match module_type_selection {
-                0 => ModuleType::Lib,
                 1 => ModuleType::Bin,
                 _ => ModuleType::Lib,
             };
