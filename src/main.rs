@@ -21,7 +21,7 @@ fn main() -> Result<()> {
         let p = Path::new(&root_name).join(&module.name);
         let full_path = p.to_str().expect("invalid module name");
         Command::new("cargo")
-            .args(&["new", module_type_flag, &full_path])
+            .args(&["new", module_type_flag, &full_path, "--vcs", "none"])
             .status()?;
     }
     println!("Workspace created: '{}'", root_name);
