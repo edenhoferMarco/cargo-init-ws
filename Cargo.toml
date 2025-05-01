@@ -1,6 +1,6 @@
 [package]
 name = "cargo-init-ws"
-version = "0.1.0"
+version = "0.2.0-dev"
 edition = "2021"
 description = "Interactive CLI-Tool for creating Cargo workspace projects"
 license = "MIT"
