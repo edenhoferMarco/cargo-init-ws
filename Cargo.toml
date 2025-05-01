@@ -2,7 +2,7 @@
 name = "cargo-init-ws"
 version = "0.1.0"
 edition = "2021"
-description = "Interactive CLI-Tool for creating Cargo workspaces projects"
+description = "Interactive CLI-Tool for creating Cargo workspace projects"
 license = "MIT"
 repository = "https://github.com/edenhoferMarco/cargo-init-ws"
 homepage = "https://github.com/edenhoferMarco/cargo-init-ws"
