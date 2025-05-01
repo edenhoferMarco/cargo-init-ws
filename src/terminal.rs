@@ -25,8 +25,8 @@ impl Terminal {
 
     pub fn determine_root_folder_name(&self) -> dialoguer::Result<String> {
         let args: Vec<String> = env::args().collect();
-        let root_name = if args.len() > 1 {
-            args[1].clone()
+        let root_name = if args.len() > 2 {
+            args[2].clone()
         } else {
             Input::with_theme(&self.theme)
                 .with_prompt("Root folder name:")
