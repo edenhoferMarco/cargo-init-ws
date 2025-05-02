@@ -5,7 +5,7 @@ with as little effort on the developer side as possible
 
 ## Installation
 - `cargo install cargo-init-ws`
-- 
+
 ## How-To
 - Run with `cargo init-ws` and the tool will guide you 
 through the process
