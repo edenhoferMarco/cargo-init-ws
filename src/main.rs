@@ -71,5 +71,14 @@ fn init_git_repo(root_folder: &str) -> Result<()>{
     Command::new("git")
         .args(["init", root_folder])
         .status()?;
+    add_gitignore(root_folder)?;
+    Ok(())
+}
+
+fn add_gitignore(root_folder: &str) -> Result<()> {
+    let gitignore_string = include_str!("resources/.gitignore_template");
+    let gitignore_path = format!("./{root_folder}/.gitignore");
+    let gitignore_path = Path::new(&gitignore_path);
+    fs::write(gitignore_path, gitignore_string)?;
     Ok(())
 }
