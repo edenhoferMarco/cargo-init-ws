@@ -26,8 +26,12 @@ fn main() -> Result<()> {
     }
     println!("Workspace created: '{root_name}'");
     match init_git_repo(&root_name) {
-        Ok(_) => {println!("Initialized Git-Repository in: '{root_name}'")}
-        Err(_) => {println!("Could not initialize git repository in: '{root_name}'")}
+        Ok(_) => {
+            println!("Initialized Git-Repository in: '{root_name}'")
+        }
+        Err(_) => {
+            println!("Could not initialize git repository in: '{root_name}'")
+        }
     }
     Ok(())
 }
@@ -67,10 +71,8 @@ fn map_rust_version_to_resolver_version() -> i32 {
     }
 }
 
-fn init_git_repo(root_folder: &str) -> Result<()>{
-    Command::new("git")
-        .args(["init", root_folder])
-        .status()?;
+fn init_git_repo(root_folder: &str) -> Result<()> {
+    Command::new("git").args(["init", root_folder]).status()?;
     add_gitignore(root_folder)?;
     Ok(())
 }
